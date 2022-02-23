@@ -19,8 +19,11 @@
 		BA54360527C661FC00545924 /* GroupTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54360427C661FC00545924 /* GroupTableCell.swift */; };
 		BA54360727C6739C00545924 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54360627C6739C00545924 /* FriendModel.swift */; };
 		BA54360927C673C900545924 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54360827C673C900545924 /* GroupModel.swift */; };
-		BA54360B27C6766E00545924 /* fakeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54360A27C6766E00545924 /* fakeDB.swift */; };
+		BA54360B27C6766E00545924 /* FakeDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54360A27C6766E00545924 /* FakeDB.swift */; };
 		BA54360D27C67FF800545924 /* AvailableGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54360C27C67FF800545924 /* AvailableGroupsTableViewController.swift */; };
+		BA54360F27C6849600545924 /* FriendsPhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54360E27C6849600545924 /* FriendsPhotosCollectionViewController.swift */; };
+		BA54361127C6850D00545924 /* FriendPhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54361027C6850D00545924 /* FriendPhotoViewCell.swift */; };
+		BA54361327C6891500545924 /* AddFriendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA54361227C6891500545924 /* AddFriendTableViewController.swift */; };
 		BABE67F727C2A9CF00EFE103 /* AuthenticationClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BABE67F627C2A9CF00EFE103 /* AuthenticationClass.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +42,11 @@
 		BA54360427C661FC00545924 /* GroupTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTableCell.swift; sourceTree = "<group>"; };
 		BA54360627C6739C00545924 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
 		BA54360827C673C900545924 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
-		BA54360A27C6766E00545924 /* fakeDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fakeDB.swift; sourceTree = "<group>"; };
+		BA54360A27C6766E00545924 /* FakeDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDB.swift; sourceTree = "<group>"; };
 		BA54360C27C67FF800545924 /* AvailableGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableGroupsTableViewController.swift; sourceTree = "<group>"; };
+		BA54360E27C6849600545924 /* FriendsPhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		BA54361027C6850D00545924 /* FriendPhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotoViewCell.swift; sourceTree = "<group>"; };
+		BA54361227C6891500545924 /* AddFriendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendTableViewController.swift; sourceTree = "<group>"; };
 		BABE67F627C2A9CF00EFE103 /* AuthenticationClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,24 +80,59 @@
 		BA06F68B27BA6E000045575E /* Introduction_in_UI_Swift_FakeVK */ = {
 			isa = PBXGroup;
 			children = (
-				BA06F68C27BA6E000045575E /* AppDelegate.swift */,
-				BA06F68E27BA6E000045575E /* SceneDelegate.swift */,
-				BA06F69027BA6E000045575E /* WelcomeViewController.swift */,
-				BABE67F627C2A9CF00EFE103 /* AuthenticationClass.swift */,
-				BA54360A27C6766E00545924 /* fakeDB.swift */,
-				BA06F69227BA6E000045575E /* Main.storyboard */,
-				BA54360627C6739C00545924 /* FriendModel.swift */,
-				BA54360827C673C900545924 /* GroupModel.swift */,
-				BA54360227C661E700545924 /* FriendTableCell.swift */,
-				BA54360427C661FC00545924 /* GroupTableCell.swift */,
-				BA54360C27C67FF800545924 /* AvailableGroupsTableViewController.swift */,
-				BA54360027C65A0B00545924 /* UserGroupsTableViewController.swift */,
-				BA5435FE27C6596B00545924 /* UserFriendsTableViewController.swift */,
-				BA06F69527BA6E020045575E /* Assets.xcassets */,
-				BA06F69727BA6E020045575E /* LaunchScreen.storyboard */,
+				BA54361427C68B4E00545924 /* Resourse */,
+				BA54361527C68B7500545924 /* Controllers */,
+				BA54361627C68BBD00545924 /* Models */,
+				BA54361727C68C0400545924 /* Views */,
 				BA06F69A27BA6E020045575E /* Info.plist */,
 			);
 			path = Introduction_in_UI_Swift_FakeVK;
+			sourceTree = "<group>";
+		};
+		BA54361427C68B4E00545924 /* Resourse */ = {
+			isa = PBXGroup;
+			children = (
+				BA54360A27C6766E00545924 /* FakeDB.swift */,
+				BA06F68C27BA6E000045575E /* AppDelegate.swift */,
+				BA06F68E27BA6E000045575E /* SceneDelegate.swift */,
+				BA06F69527BA6E020045575E /* Assets.xcassets */,
+				BA06F69227BA6E000045575E /* Main.storyboard */,
+				BA06F69727BA6E020045575E /* LaunchScreen.storyboard */,
+			);
+			path = Resourse;
+			sourceTree = "<group>";
+		};
+		BA54361527C68B7500545924 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BA06F69027BA6E000045575E /* WelcomeViewController.swift */,
+				BA54360E27C6849600545924 /* FriendsPhotosCollectionViewController.swift */,
+				BA54360C27C67FF800545924 /* AvailableGroupsTableViewController.swift */,
+				BA54360027C65A0B00545924 /* UserGroupsTableViewController.swift */,
+				BA54361227C6891500545924 /* AddFriendTableViewController.swift */,
+				BA5435FE27C6596B00545924 /* UserFriendsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BA54361627C68BBD00545924 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BABE67F627C2A9CF00EFE103 /* AuthenticationClass.swift */,
+				BA54360627C6739C00545924 /* FriendModel.swift */,
+				BA54360827C673C900545924 /* GroupModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BA54361727C68C0400545924 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BA54360227C661E700545924 /* FriendTableCell.swift */,
+				BA54360427C661FC00545924 /* GroupTableCell.swift */,
+				BA54361027C6850D00545924 /* FriendPhotoViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,8 +207,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA54360327C661E700545924 /* FriendTableCell.swift in Sources */,
+				BA54360F27C6849600545924 /* FriendsPhotosCollectionViewController.swift in Sources */,
 				BA54360927C673C900545924 /* GroupModel.swift in Sources */,
-				BA54360B27C6766E00545924 /* fakeDB.swift in Sources */,
+				BA54361127C6850D00545924 /* FriendPhotoViewCell.swift in Sources */,
+				BA54360B27C6766E00545924 /* FakeDB.swift in Sources */,
 				BA06F69127BA6E000045575E /* WelcomeViewController.swift in Sources */,
 				BA54360127C65A0B00545924 /* UserGroupsTableViewController.swift in Sources */,
 				BA06F68D27BA6E000045575E /* AppDelegate.swift in Sources */,
@@ -175,6 +218,7 @@
 				BABE67F727C2A9CF00EFE103 /* AuthenticationClass.swift in Sources */,
 				BA5435FF27C6596B00545924 /* UserFriendsTableViewController.swift in Sources */,
 				BA06F68F27BA6E000045575E /* SceneDelegate.swift in Sources */,
+				BA54361327C6891500545924 /* AddFriendTableViewController.swift in Sources */,
 				BA54360527C661FC00545924 /* GroupTableCell.swift in Sources */,
 				BA54360D27C67FF800545924 /* AvailableGroupsTableViewController.swift in Sources */,
 			);

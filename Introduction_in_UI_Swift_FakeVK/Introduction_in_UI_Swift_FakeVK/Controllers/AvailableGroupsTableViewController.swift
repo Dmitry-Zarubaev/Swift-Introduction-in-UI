@@ -37,7 +37,7 @@ class AvailableGroupsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "GroupCell", for: indexPath) as? GroupTableCell else {
-            preconditionFailure("Wrong cell format. Expected 'FriendTableCell'")
+            preconditionFailure("Wrong cell format. Expected 'GroupTableCell'")
         }
         
         cell.groupLabelTableCell.text = availableGroups[indexPath.row].label

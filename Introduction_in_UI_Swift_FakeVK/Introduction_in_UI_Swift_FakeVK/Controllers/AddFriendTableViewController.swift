@@ -1,5 +1,5 @@
 //
-//  FriendsListViewController.swift
+//  AddFriendTableViewController.swift
 //  Introduction_in_UI_Swift_FakeVK
 //
 //  Created by Дмитрий Зарубаев on 23.02.2022.
@@ -7,18 +7,18 @@
 
 import UIKit
 
-class UserFriendsTableViewController: UITableViewController {
+class AddFriendTableViewController: UITableViewController {
     
-    var userFriends: [Friend]
+    var availableUsers: [Friend]
     
     
     required init?(coder: NSCoder) {
         let fakeDb = MyFakeDatabase()
-        userFriends = fakeDb.getFriendListForCurrentUser()
+        availableUsers = fakeDb.getAvailableUserList()
         
         super.init(coder: coder)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -32,7 +32,7 @@ class UserFriendsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return userFriends.count
+        return availableUsers.count
     }
 
 
@@ -41,11 +41,14 @@ class UserFriendsTableViewController: UITableViewController {
             preconditionFailure("Wrong cell format. Expected 'FriendTableCell'")
         }
         
-        cell.friendLabelTableCell.text = userFriends[indexPath.row].fullName
-
+        cell.friendLabelTableCell.text = availableUsers[indexPath.row].fullName
+        if let friendAvatar = availableUsers[indexPath.row].avatar {
+            cell.friendAvatarTableCell.image = friendAvatar
+        }
 
         return cell
     }
+
 
     /*
     // Override to support conditional editing of the table view.

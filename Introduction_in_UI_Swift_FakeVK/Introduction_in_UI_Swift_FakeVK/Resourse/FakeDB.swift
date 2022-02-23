@@ -28,7 +28,7 @@ struct MyFakeDatabase {
     private var myFriends: Array<Friend> = [
         Friend(firstName: "Gordon", lastName: "Freeman"),
         Friend(firstName: "Isaac", lastName: "Clarke"),
-        Friend(firstName: "Duke", lastName: "Nukem"),
+        Friend(firstName: "Duke", lastName: "Nukem", avatar: UIImage.init(systemName: "face.dashed")),
     ]
     
     private var myGroups: Array<Group> = [
@@ -48,6 +48,6 @@ struct MyFakeDatabase {
     }
     
     func getFriendListForCurrentUser() -> [Friend] {
-        return friends
+        return myFriends
     }
 }
