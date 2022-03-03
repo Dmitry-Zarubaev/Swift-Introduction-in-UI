@@ -1,19 +1,18 @@
 //
-//  ViewController.swift
+//  MainScreenViewController.swift
 //  Introduction_in_UI_Swift_FakeVK
 //
-//  Created by Дмитрий Зарубаев on 14.02.2022.
+//  Created by Дмитрий Зарубаев on 20.02.2022.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
-
 }
-
